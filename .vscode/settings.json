@@ -1,0 +1,26 @@
+{
+    // Ignore Tailwind CSS directives in CSS files
+    "css.lint.unknownAtRules": "ignore",
+    // Format on save for cleaner code
+    "editor.formatOnSave": true,
+    // Auto-import suggestions
+    "javascript.suggest.autoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // Tailwind CSS IntelliSense (if extension is installed)
+    "tailwindCSS.experimental.classRegex": [
+        [
+            "class[nN]ame\\s*=\\s*['\"`]([^'\"`]*)['\"`]",
+            "([^'\"`]*)"
+        ]
+    ],
+    // File associations
+    "files.associations": {
+        "*.jsx": "javascriptreact",
+        "*.js": "javascript"
+    },
+    // Exclude from file watcher to improve performance
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/.git/**": true
+    }
+}
